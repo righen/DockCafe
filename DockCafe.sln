@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockCafe", "DockCafe\DockCafe.csproj", "{923E80D7-0021-4DD7-9057-A607DEBF5F2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockCafe.Tests", "DockCafe.Tests\DockCafe.Tests.csproj", "{77534FC6-6B39-4ADB-9F4D-F667AE4E0C7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{923E80D7-0021-4DD7-9057-A607DEBF5F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{923E80D7-0021-4DD7-9057-A607DEBF5F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{923E80D7-0021-4DD7-9057-A607DEBF5F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{923E80D7-0021-4DD7-9057-A607DEBF5F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77534FC6-6B39-4ADB-9F4D-F667AE4E0C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77534FC6-6B39-4ADB-9F4D-F667AE4E0C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77534FC6-6B39-4ADB-9F4D-F667AE4E0C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77534FC6-6B39-4ADB-9F4D-F667AE4E0C7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
