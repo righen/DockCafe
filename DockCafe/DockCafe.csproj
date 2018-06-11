@@ -52,6 +52,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -173,7 +175,27 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806111643516_InitialCreate.cs" />
+    <Compile Include="Migrations\201806111643516_InitialCreate.Designer.cs">
+      <DependentUpon>201806111643516_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806111656546_addInitialTables.cs" />
+    <Compile Include="Migrations\201806111656546_addInitialTables.Designer.cs">
+      <DependentUpon>201806111656546_addInitialTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CoreModels\Category.cs" />
+    <Compile Include="Models\CoreModels\CRTransaction.cs" />
+    <Compile Include="Models\CoreModels\CRTransactionType.cs" />
+    <Compile Include="Models\CoreModels\Customer.cs" />
+    <Compile Include="Models\CoreModels\DefaultModels.cs" />
+    <Compile Include="Models\CoreModels\Item.cs" />
+    <Compile Include="Models\CoreModels\Order.cs" />
+    <Compile Include="Models\CoreModels\OrderItem.cs" />
+    <Compile Include="Models\CoreModels\PaymentType.cs" />
+    <Compile Include="Models\CoreModels\Receipt.cs" />
+    <Compile Include="Models\CoreModels\ReceiptDetail.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -237,6 +259,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\UpdateModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -245,6 +268,14 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201806111643516_InitialCreate.resx">
+      <DependentUpon>201806111643516_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806111656546_addInitialTables.resx">
+      <DependentUpon>201806111656546_addInitialTables.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
